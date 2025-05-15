@@ -4,7 +4,7 @@ import "./EzyComponent.css";
 import ChatUI from "./ChatUI.jsx"
 
 import botimage from "../assets/Ezy.png"
-import chaticon from "../assets/chat.png"
+import chaticon from "../assets/chatbot.png"
 
 export default function EzyBot() {
   const [isOpen, setIsOpen] = useState(false);
