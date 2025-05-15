@@ -37,8 +37,8 @@ export default function ChatUI() {
           ]);
     
           const response = await axios.post(
-            `${BOT_API}/parse`,
-            { message: message },
+            `${BOT_API}/chat`,
+            { query: message },
             {
               headers: {
                 "Content-Type": "application/json",
@@ -47,10 +47,10 @@ export default function ChatUI() {
             }
           );
     
-          if (response.data && response.data.output) {
+          if (response.data && response.data.response) {
             setMessages((prevMessages) => [
               ...prevMessages,
-              { sender: "bot", text: response.data.output.replace(/\n/g, "<br />"),
+              { sender: "bot", text: response.data.response.replace(/\n/g, "<br />"),
               },
             ]);
           } else {
