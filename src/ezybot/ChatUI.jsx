@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import "./ChatUI.css";
+import "./ChatUi.css";
 
 const BOT_API = import.meta.env.VITE_API_URL;
 X_Authentication_Token = import.meta.env.X_Authentication_Token;
