@@ -3,7 +3,7 @@ import axios from "axios";
 import "./ChatUi.css";
 
 const BOT_API = import.meta.env.VITE_API_URL;
-const X_Authentication = import.meta.env.VITE_X_Authentication_Token;
+const X_Authentication = import.meta.env.VITE_X_TOKEN;
 
 export default function ChatUI() {
     const [messages, setMessages] = useState([]);
