@@ -3,7 +3,7 @@ import axios from "axios";
 import "./ChatUi.css";
 
 const BOT_API = import.meta.env.VITE_API_URL;
-X_Authentication_Token = import.meta.env.X_Authentication_Token;
+const X_Authentication = import.meta.env.X_Authentication_Token;
 
 export default function ChatUI() {
     const [messages, setMessages] = useState([]);
@@ -42,7 +42,7 @@ export default function ChatUI() {
             {
               headers: {
                 "Content-Type": "application/json",
-                "X-API-KEY": X_Authentication_Token,
+                "X-API-KEY": X_Authentication,
               },
             }
           );
