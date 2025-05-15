@@ -16,7 +16,7 @@
 ## 🌐 Tech Stack
 
 - **Frontend**: React.js (Hosted on [Vercel](https://vercel.com))
-- **Backend**: FastAPI (Hosted on [PythonAnywhere](https://www.pythonanywhere.com))
+- **Backend**: FastAPI (Hosted on [Render](https://render.com/))
 - **Database**: MongoDB (accessed via **Prisma ORM**)
 
 ---
